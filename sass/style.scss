@@ -1,0 +1,124 @@
+nav {
+	background-color: $bg-verde;
+}
+
+hr {
+	text-align: center;
+	width: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.bg-image {
+	background-image: url(../img/carousel-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	margin-top: -30px;
+	h1 {
+		padding-top: 20px;
+		text-transform: uppercase;
+		color: white;
+	}
+	p {
+		font-size: 18px;
+		color: white;
+	}
+}
+
+.section-pick {
+	text-transform: uppercase;
+}
+
+@mixin cuadrado(){
+		width:150px;
+		height:100px;
+		display:inline-block;
+		margin: 5px 10px;
+}
+
+@mixin cuadrado-color($color){
+	background-color:$color;
+}
+
+.cuadrado{
+	padding: 40px 0;
+	@include cuadrado();
+	&.azul{@include cuadrado-color($azul);}
+	&.celeste{@include cuadrado-color($celeste);}
+	&.beige{@include cuadrado-color($beige);}
+	&.naranjito{@include cuadrado-color($naranjito);}
+	&.naranjo{@include cuadrado-color($naranjo);}
+	&.rosa{@include cuadrado-color($rosa);}
+	&.burdeo{@include cuadrado-color($burdeo);}
+	&.gris{@include cuadrado-color($gris);}
+	&.plomo{@include cuadrado-color($plomo);}
+	&.amarillo{@include cuadrado-color($amarillo);}
+	&.coral{@include cuadrado-color($coral);}
+	&.mostaza{@include cuadrado-color($mostaza);}
+	&.piel{@include cuadrado-color($piel);}
+	&.turquesa{@include cuadrado-color($turquesa);}
+	&.celeste{@include cuadrado-color($celeste);}
+	&.musgo{@include cuadrado-color($musgo);}
+	&.chino{@include cuadrado-color($chino);}
+	&.acoralado{@include cuadrado-color($acoralado);}
+	&.rojizo{@include cuadrado-color($rojizo);}
+	&.cafe{@include cuadrado-color($cafe);}
+	&.limon{@include cuadrado-color($limon);}
+	&.celestito{@include cuadrado-color($celestito);}
+	&.azulado{@include cuadrado-color($azulado);}
+	&.sandia{@include cuadrado-color($sandia);}
+	&.rojo{@include cuadrado-color($rojo);}
+}
+
+.bg-azul {
+	background-color: $bg-azul;
+	color: white;
+	padding: 50px 0;
+	& h2 {
+		text-transform: uppercase;
+	}
+	& .progress {
+		background-color: whitesmoke;
+		border: 1px solid #E8E8E8;
+		padding: 3px;
+		& .determinate {
+			background-color: $naranjo;
+		}
+	}
+}
+
+.what-we-do{
+	background-color: $bg-verde;
+	color: white;
+	margin-top: -20px;
+	padding: 100px;
+	& .cont-icon {
+		width: 120px;
+		text-align: center;
+		background: linear-gradient( 90deg, #768190, #242F3D);
+		& .btn {
+			background-color: #332F34;
+		}
+	}
+}
+
+.team, .footer {
+	background-color: $bg-verde;
+	color: white;
+}
+
+.price {
+	background-color: $bg-azul;
+	color: white;
+	margin-top: -33px;
+	padding: 30px 0;
+}
+
+.contact, .client-say {
+	background-color: $bg-azul;
+	color: white;
+	margin-top: -20px;
+	padding: 30px 0;
+}
